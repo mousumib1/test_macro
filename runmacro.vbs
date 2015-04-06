@@ -37,7 +37,7 @@ Else
 	' of the macro file you created .
 	oXL.VBE.ActiveVBProject.VBComponents.Import WScript.Arguments(3) ' "F:\aws_work\awscoe\APRIL2015\poc\macro_attach\KbTest.bas"
 	' Now run the macro
-	oXL.Run WScript.Arguments(4) WScript.Arguments(5)
+	oXL.Run WScript.Arguments(4), WScript.Arguments(5)
 	
 	' save macro in workbook and close it
 	oXL.UserControl = False

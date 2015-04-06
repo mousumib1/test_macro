@@ -45,7 +45,7 @@ passwordPolicySettingColumnName = "Setting"
 '***************************************************
 ' Please change the path of the following of the output XML file
 
-appPath = jsonpath 
+appPath = jsonpath
 ' "F:\aws_work\awscoe\APRIL2015\poc\macro_attach\"
 
 
