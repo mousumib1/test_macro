@@ -1,6 +1,6 @@
 Attribute VB_Name = "Create_IAM"
 
-Public Sub CreatePropertyFile_IAM()
+Public Sub CreatePropertyFile_IAM(jsonpath As String)
 '*****************************************************
 ' Purpose:   Create property file for IAM as an xml format.
 ' Notes:     Requires an IAM parameter sheet.
@@ -45,7 +45,8 @@ passwordPolicySettingColumnName = "Setting"
 '***************************************************
 ' Please change the path of the following of the output XML file
 
-appPath = "F:\aws_work\awscoe\APRIL2015\poc\macro_attach\"
+appPath = jsonpath 
+' "F:\aws_work\awscoe\APRIL2015\poc\macro_attach\"
 
 
 '***************************************************

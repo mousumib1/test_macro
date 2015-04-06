@@ -14,7 +14,7 @@ Const TristateUseDefault = -2, TristateTrue = -1, TristateFalse = 0
 
 On Error resume next 
 
-If WScript.Arguments.Count < 5 Then
+If WScript.Arguments.Count < 6 Then
     WScript.Echo "Missing parameters. Please enter all five parameter: Log file, Parameter sheet,Sheet name for which macro should work, Macro file, Macro function name. Give full file path for all files."
 Else
 	Set fso = CreateObject("Scripting.FileSystemObject")
@@ -37,7 +37,7 @@ Else
 	' of the macro file you created .
 	oXL.VBE.ActiveVBProject.VBComponents.Import WScript.Arguments(3) ' "F:\aws_work\awscoe\APRIL2015\poc\macro_attach\KbTest.bas"
 	' Now run the macro
-	oXL.Run WScript.Arguments(4)
+	oXL.Run WScript.Arguments(4) WScript.Arguments(5)
 	
 	' save macro in workbook and close it
 	oXL.UserControl = False
